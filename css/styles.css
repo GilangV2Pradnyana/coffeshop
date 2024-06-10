@@ -172,7 +172,7 @@ article .about-content {
     justify-content: center;
 }
 .about-content .about-content-img {
-    flex: 1 1 45rem;
+    flex: 1 1 40rem;
 }
 .about-content .about-content-img img{
     width: 100%;
@@ -249,9 +249,13 @@ article .about-content {
     /* about-us*/
     article .about-content {
         flex-wrap: wrap;
-        
     }
    .about-content-article {
     padding-left: 1rem;
+   }
+   .about-content-img img{
+        width: 24rem;
+        object-fit: cover;
+        object-position: center;
    }
 }
