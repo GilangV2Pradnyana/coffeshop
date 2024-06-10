@@ -8,11 +8,14 @@
     font-family: 'Poppins';
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins';
     background-color: var(--bg);
     color: #fff;
-    /* min-height: 2000vh; */
+    min-height: 2000vh;
 }
 
 /* header */
@@ -100,6 +103,7 @@ section.hero {
     height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .hero::after {
     content: '';
@@ -111,6 +115,8 @@ section.hero {
 }
 .hero .hero-content { 
     padding: 2rem 5%;
+    position: absolute;
+    z-index: 3;
 }
 .hero .hero-content h1 {
     font-size: 3rem;
@@ -143,6 +149,49 @@ section.hero {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.hero .hero-content a:active {
+    opacity: .8;
+}
+
+/* article about us */
+article h2 {
+    text-align: center;
+    padding: 7rem 0rem 2rem;
+    font-family: 'Poppins';
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-style: italic;
+}
+article span {
+    color: var(--primary);
+}
+/* article content */
+article .about-content {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.about-content .about-content-img {
+    flex: 1 1 45rem;
+}
+.about-content .about-content-img img{
+    width: 100%;
+}
+.about-content .about-content-article {
+    width: 100px;
+    flex: 1 1 35rem;
+}
+.about-content .about-content-article h3 {
+    font-size: 2rem;
+    padding-bottom: .5rem;
+    font-weight: 600;
+}
+.about-content .about-content-article p {   
+    font-size: 1rem;
+    width: 70%;
+    line-height: 1.4rem;
+}
+
 /* responsive */
 /* tablet responsive */
 @media screen and (min-width:770px) {
@@ -196,4 +245,13 @@ section.hero {
         -ms-transform: scale(.6);
         -o-transform: scale(.6);
     }
+
+    /* about-us*/
+    article .about-content {
+        flex-wrap: wrap;
+        
+    }
+   .about-content-article {
+    padding-left: 1rem;
+   }
 }
