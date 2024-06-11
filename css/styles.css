@@ -15,7 +15,6 @@ body {
     font-family: 'Poppins';
     background-color: var(--bg);
     color: #fff;
-    min-height: 2000vh;
 }
 
 /* header */
@@ -331,6 +330,74 @@ form .input-group input:focus {
   -o-border-radius: .5rem;
 }
 
+/* footer */
+footer {
+    margin-top: 10rem;
+    background-color: #222;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+/* footer content */
+footer .content {
+    /* border: 1px solid salmon; */
+    padding: 5rem;
+}
+footer .content h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+footer .content p {
+    font-weight: 100;
+    margin-bottom: .8rem;
+    line-height: 1.5rem;
+}
+footer .content .content-feather a{
+    color: #fff;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+footer .content .content-feather a:hover {
+    color: var(--primary);
+}
+#feather-2, #feather-3{
+    margin-left: 1.5rem;
+}
+
+
+/* footer card */
+footer .card {
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    padding: 7rem 5rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+#footer-card {
+    background-color: #2f2c2c;
+    border-radius: 1rem;
+    box-shadow: 1.5rem 1.5rem #534747;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+} 
+
+footer .card .card-2 {
+    padding: 5rem 2rem;
+}
+footer .card .card-1 {
+    padding: 5rem 3.8rem; 
+}
+
 /* mobile responsive */
 @media screen and (max-width:768px) {
     html {
@@ -396,5 +463,16 @@ form .input-group input:focus {
    .contact-map {
     flex-wrap: wrap;
     height: 50rem;
+    }
+
+    /* footer */
+    footer {
+       flex-wrap: wrap;
+    }
+    footer .content {
+        z-index: 4;
+    }
+    footer .card {
+        margin-top: -8rem;
     }
 }
