@@ -247,15 +247,88 @@ menu {
     font-weight: 600;
 }
 
-/* responsive */
-/* tablet responsive */
-@media screen and (min-width:770px) {
-    html {
-        font-size: 80%;
-    }
-    .hero .hero-content h1 {
-        width: 65%;
-    }
+/* about us */
+.contact h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    font-style: italic;
+    font-weight: 700;
+    padding: 7rem 10% 1rem;
+    text-align: center;
+}
+.contact span {
+    color: var(--primary);
+} 
+.contact p {
+    width: 50%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-weight: 200;
+}
+
+/* maps */
+.contact-map {
+    display: flex;
+    margin: 2rem auto;
+    background-color: #222;
+    width: 80%;
+    height: 30rem;
+}
+.contact-map .map {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    flex: 1 1 50rem;
+}
+/* form */
+.contact-map form{
+    flex: 1 1 20rem;
+    margin: auto;
+}
+.contact-map .input-group {
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    padding: .1rem;
+    padding-left: .5rem;
+    gap: .5rem;
+    background-color: var(--bg);    
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+form .input-group input{
+    background: none;
+    width: 100%;
+    color: #fff;
+    padding: 1rem 0;
+    border: none;
+}
+form .input-group input:focus {
+    background-color: none;
+}
+/* button */
+.btn {
+    text-align: center;
+    /* border: 1px salmon solid; */
+    margin-top: -2rem;
+}
+#btn {
+  padding: .5rem 1rem;
+  background-color: #222;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0px 0px 4px 2px #010101;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
 }
 
 /* mobile responsive */
@@ -318,4 +391,10 @@ menu {
    .menu-card-content {
     width: 100%;
    }
+
+   /* kontak kami */
+   .contact-map {
+    flex-wrap: wrap;
+    height: 50rem;
+    }
 }
