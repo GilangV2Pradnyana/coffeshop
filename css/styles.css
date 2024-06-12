@@ -341,8 +341,8 @@ footer {
 }
 /* footer content */
 footer .content {
-    /* border: 1px solid salmon; */
     padding: 5rem;
+    flex: 1 1 ;
 }
 footer .content h2 {
     font-size: 2rem;
@@ -376,9 +376,10 @@ footer .card {
     height: 100%;
     text-align: center;
     display: flex;
-    padding: 7rem 5rem;
-    gap: 2rem;
+    padding: 7rem 0;    
+    gap: 3rem;
     align-items: center;
+    flex: 2 1;
 }
 
 #footer-card {
